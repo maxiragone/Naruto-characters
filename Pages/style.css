@@ -1,0 +1,65 @@
+/* General */
+body {
+  padding: 1%;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+img {
+  filter: saturate(0%);
+}
+
+/* Header */
+
+.suscribers {
+  padding: 5%;
+  background-color: hsla(246, 31%, 51%, 0.227);
+  color: rgb(26, 24, 21);
+  font-size: 1.6em;
+  text-align: center;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 250, 250, 0.05);
+  backdrop-filter: blur(1.5px);
+  z-index: 1;
+}
+
+/* Le ponemos "display: none" para que EXISTA en el flujo de información y el buscador lo VEA */
+h1 {
+  display: none;
+}
+
+/* Si combinamos "display:blok con margin:auto" nos centra la imagen. 
+NO MATAR UN MOSQUITO CON UNA BAZOOKA*/
+header img {
+  width: 25%;
+  display: block;
+  margin: auto;
+}
+
+/* Navbar */
+
+nav {
+  text-align: center;
+}
+
+/* Al poner "display:inline" no es necesario usar "list-style;none" para SACAR LOS PUNTOS */
+nav ul li {
+  display: inline;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  padding: 0.5% 2%;
+  text-align: center;
+}
+
+.navbarList {
+  text-decoration: none;
+  color: rgb(92, 91, 91);
+}
+
+.navbarList:hover {
+  color: #89CFFD;
+}
