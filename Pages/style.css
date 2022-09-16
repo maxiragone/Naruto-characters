@@ -1,3 +1,7 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,900&display=swap');
+
+
 /* General */
 body {
   padding: 1%;
@@ -7,6 +11,20 @@ body {
 
 img {
   filter: saturate(0%);
+}
+
+/* Le ponemos "display: none" para que EXISTA en el flujo de información y el buscador lo VEA */
+h1 {
+  display: none;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.5em;
+
 }
 
 /* Header */
@@ -27,10 +45,6 @@ header {
   z-index: 1;
 }
 
-/* Le ponemos "display: none" para que EXISTA en el flujo de información y el buscador lo VEA */
-h1 {
-  display: none;
-}
 
 /* Si combinamos "display:blok con margin:auto" nos centra la imagen. 
 NO MATAR UN MOSQUITO CON UNA BAZOOKA*/
@@ -62,4 +76,97 @@ nav ul li {
 
 .navbarList:hover {
   color: #89CFFD;
+}
+
+/* Principal */
+.principal {
+  display: flex;
+  padding: 3%;
+  justify-content: space-between;
+}
+
+/* News */
+main {
+  width: 60%;
+}
+
+main .reporterName {
+  font-family: 'Besley', serif;
+}
+
+main .photo {
+  max-width: 800px;
+}
+
+
+
+main .newsContent {
+  display: flex;
+}
+
+main .newsContent p {
+  padding: 0 1%;
+  text-align: justify;
+}
+
+/* Aside */
+aside {
+  width: 30%;
+  border-left: 2px solid black;
+  padding: 0 1%;
+}
+
+aside .ads {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+aside img {
+  width: 90%;
+}
+
+/* Form */
+
+.suscribe {
+  margin: auto;
+  border-top: 2px solid black;
+  background-color: rgba(198, 220, 228, 0.839);
+  padding: 2% 0 2% 5%;
+  box-shadow: 6px 6px 6px 4px rgb(218 234 241 / 89%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label.userInfo {
+  justify-content: space-between;
+  display: flex;
+  width: 80%;
+}
+
+form input {
+  padding: 0px 1%;
+  margin: 6px 0;
+  width: 70%;
+  box-sizing: border-box;
+}
+
+form select {
+  width: 20%;
+}
+
+form label.userType {
+  width: 15%;
+}
+
+form button {
+  width: 20%;
+  text-align: center;
+  pad: 12px 20px;
+  margin: auto;
+  border-radius: 5px;
+
 }
